@@ -28,9 +28,15 @@ function addItem(){
 
 
 }
+let deletion = document.getElementsByClassName('button');
+deletion.addEventListener('click', deleteItem(item));
+function deleteItem(item){
+  let deletefromlist = document.createElement('button');
+  deletefromlist.remove();
+}
 
-// localStorage.setItem('createNew', JSON.stringify(li));
-// todoList.push(tasktobeInputted);
+localStorage.setItem('createNew', JSON.stringify(li));
+todoList.push(tasktobeInputted);
 
 
 
